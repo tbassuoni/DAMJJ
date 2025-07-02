@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا - DAMJ</title>
+    <link rel="stylesheet" href="/css/contact_us.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Animation keyframes */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Animation classes */
+        .animate-fadeInUp {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .animate-fadeInLeft {
+            animation: fadeInLeft 0.8s ease-out forwards;
+        }
+
+        .animate-fadeInRight {
+            animation: fadeInRight 0.8s ease-out forwards;
+        }
+
+        .animate-bounce {
+            animation: bounce 2s infinite;
+        }
+
+        .animate-pulse {
+            animation: pulse 2s infinite;
+        }
+
+        .animate-delay-1 {
+            animation-delay: 0.2s;
+        }
+
+        .animate-delay-2 {
+            animation-delay: 0.4s;
+        }
+
+        .animate-delay-3 {
+            animation-delay: 0.6s;
+        }
+
+        .animate-delay-4 {
+            animation-delay: 0.8s;
+        }
+
+        /* Initially hidden for animation */
+        .animate-fadeInUp,
+        .animate-fadeInLeft,
+        .animate-fadeInRight {
+            opacity: 0;
+        }
+
+        /* Hover effects */
+        .contact-info-card:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            transform: scale(1.02);
+            transition: transform 0.2s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            transition: transform 0.2s ease;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>DAMJ</h1>
+                    <span>نحو تعليم شامل للجميع</span>
+                </div>
+                
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="/index.html">الرئيسية</a></li>
+                        <li><a href="/page/about.html">عن المنصة</a></li>
+                        <li><a href="/page/features.html">المميزات</a></li>
+                        <li><a href="/page/cours.html">الدورات</a></li>
+                        <li><a href="/page/contact.html" class="active">اتصل بنا</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="auth-buttons">
+                    <a href="#" class="btn btn-login">تسجيل الدخول</a>
+                    <a href="#" class="btn btn-register">إنشاء حساب</a>
+                </div>
+                
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="contact-hero-content animate-fadeInUp">
+                <h1>تواصل <span>معنا</span></h1>
+                <p>لا تتردد في التواصل معنا لأي استفسار أو مساعدة</p>
+                <div class="hero-decoration animate-bounce">
+                    <i class="fas fa-envelope"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-info-grid">
+                <div class="contact-info-card animate-fadeInUp animate-delay-1">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt animate-pulse"></i>
+                    </div>
+                    <h3>العنوان</h3>
+                    <p>شارع الملكة رانيا<br>عمان - الأردن<br>الرمز البريدي: 11192</p>
+                </div>
+                
+                <div class="contact-info-card animate-fadeInUp animate-delay-2">
+                    <div class="info-icon">
+                        <i class="fas fa-phone animate-pulse"></i>
+                    </div>
+                    <h3>الهاتف</h3>
+                    <p>+962 6 123 4567<br>+962 79 123 4567<br>الخط الساخن: 1800</p>
+                </div>
+                
+                <div class="contact-info-card animate-fadeInUp animate-delay-3">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope animate-pulse"></i>
+                    </div>
+                    <h3>البريد الإلكتروني</h3>
+                    <p>info@damj.edu<br>support@damj.edu<br>admin@damj.edu</p>
+                </div>
+                
+                <div class="contact-info-card animate-fadeInUp animate-delay-4">
+                    <div class="info-icon">
+                        <i class="fas fa-clock animate-pulse"></i>
+                    </div>
+                    <h3>ساعات العمل</h3>
+                    <p>الأحد - الخميس<br>8:00 ص - 4:00 م<br>الجمعة: مغلق</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-form-container animate-fadeInLeft">
+                    <div class="section-header">
+                        <h2>أرسل لنا <span>رسالة</span></h2>
+                        <p>سنكون سعداء للرد على استفساراتك في أقرب وقت ممكن</p>
+                    </div>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">الاسم الأول *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                                <i class="fas fa-user form-icon"></i>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">الاسم الأخير *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                                <i class="fas fa-user form-icon"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">البريد الإلكتروني *</label>
+                                <input type="email" id="email" name="email" required>
+                                <i class="fas fa-envelope form-icon"></i>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">رقم الهاتف</label>
+                                <input type="tel" id="phone" name="phone">
+                                <i class="fas fa-phone form-icon"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">الموضوع *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">اختر الموضوع</option>
+                                <option value="general">استفسار عام</option>
+                                <option value="courses">الدورات والمناهج</option>
+                                <option value="technical">دعم فني</option>
+                                <option value="registration">التسجيل والحسابات</option>
+                                <option value="feedback">ملاحظات واقتراحات</option>
+                                <option value="partnership">شراكات</option>
+                            </select>
+                            <i class="fas fa-list form-icon"></i>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">الرسالة *</label>
+                            <textarea id="message" name="message" rows="6" placeholder="اكتب رسالتك هنا..." required></textarea>
+                            <i class="fas fa-comment form-icon"></i>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">أوافق على <a href="#">سياسة الخصوصية</a> و<a href="#">شروط الاستخدام</a> *</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span class="btn-text">إرسال الرسالة</span>
+                                <i class="fas fa-paper-plane btn-icon"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="contact-sidebar animate-fadeInRight">
+                    <div class="sidebar-card">
+                        <h3>لماذا تختار DAMJ؟</h3>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> منصة تعليمية متخصصة</li>
+                            <li><i class="fas fa-check-circle"></i> دعم متخصص 24/7</li>
+                            <li><i class="fas fa-check-circle"></i> تقنيات تعليمية متطورة</li>
+                            <li><i class="fas fa-check-circle"></i> فريق معلمين مؤهل</li>
+                            <li><i class="fas fa-check-circle"></i> محتوى تفاعلي وممتع</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sidebar-card">
+                        <h3>تابعنا على وسائل التواصل</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link facebook">
+                                <i class="fab fa-facebook-f"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="#" class="social-link twitter">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                            <a href="#" class="social-link instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="#" class="social-link youtube">
+                                <i class="fab fa-youtube"></i>
+                                <span>YouTube</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-card">
+                        <h3>اتصل بنا مباشرة</h3>
+                        <div class="direct-contact">
+                            <a href="tel:+96261234567" class="contact-link">
+                                <i class="fas fa-phone"></i>
+                                <span>+962 6 123 4567</span>
+                            </a>
+                            <a href="mailto:info@damj.edu" class="contact-link">
+                                <i class="fas fa-envelope"></i>
+                                <span>info@damj.edu</span>
+                            </a>
+                            <a href="#" class="contact-link">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>واتساب</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header animate-fadeInUp">
+                <h2>موقعنا على <span>الخريطة</span></h2>
+                <p>يمكنك زيارتنا في مقرنا الرئيسي في عمان</p>
+            </div>
+            
+            <div class="map-container animate-fadeInUp">
+                <div class="map-placeholder">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3384.344515326917!2d35.91777931475785!3d31.955065181237076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ca1c726c4e6e7%3A0x5d4b6c1e5b5d5d5d!2sAmman%2C%20Jordan!5e0!3m2!1sen!2s!4v1635000000000!5m2!1sen!2s"
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header animate-fadeInUp">
+                <h2>الأسئلة <span>الشائعة</span></h2>
+                <p>إجابات على أكثر الأسئلة شيوعاً</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item animate-fadeInLeft animate-delay-1">
+                    <div class="faq-header">
+                        <h3>كيف يمكنني التسجيل في المنصة؟</h3>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-content">
+                        <p>يمكنك التسجيل بسهولة من خلال النقر على زر "إنشاء حساب" في أعلى الصفحة، ثم ملء النموذج المطلوب بالمعلومات الأساسية.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate-fadeInLeft animate-delay-2">
+                    <div class="faq-header">
+                        <h3>هل المنصة مجانية؟</h3>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-content">
+                        <p>نقدم دورات مجانية ومدفوعة. يمكنك البدء بالدورات المجانية وتجربة المنصة لمدة أسبوع مجاناً.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate-fadeInLeft animate-delay-3">
+                    <div class="faq-header">
+                        <h3>ما الأعمار التي تستهدفها المنصة؟</h3>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-content">
+                        <p>نستهدف جميع الأعمار من الأطفال حتى البالغين، مع محتوى مخصص لكل فئة عمرية.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate-fadeInLeft animate-delay-4">
+                    <div class="faq-header">
+                        <h3>هل يمكن الوصول للمنصة من الهاتف؟</h3>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-content">
+                        <p>نعم، المنصة متوافقة مع جميع الأجهزة الذكية والحاسوب، ويمكن الوصول إليها من أي مكان.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <h3>عن DAMJ</h3>
+                    <p>منصة تعليمية شاملة تهدف إلى توفير تعليم عالي الجودة لذوي الاحتياجات الخاصة باستخدام أحدث التقنيات والأساليب التعليمية.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col footer-links">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="/index.html">الرئيسية</a></li>
+                        <li><a href="/page/about.html">عن المنصة</a></li>
+                        <li><a href="/page/features.html">المميزات</a></li>
+                        <li><a href="/page/cours.html">الدورات</a></li>
+                        <li><a href="/page/contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col footer-courses">
+                    <h3>الدورات</h3>
+                    <ul>
+                        <li><a href="#">أساسيات القراءة</a></li>
+                        <li><a href="#">الرياضيات التطبيقية</a></li>
+                        <li><a href="#">الفنون التعبيرية</a></li>
+                        <li><a href="#">المهارات الحياتية</a></li>
+                        <li><a href="#">التواصل الاجتماعي</a></li>
+                        <li><a href="#">البرمجة للمبتدئين</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col footer-contact">
+                    <h3>اتصل بنا</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> عمان، الأردن</li>
+                        <li><i class="fas fa-phone"></i> +962 79 123 4567</li>
+                        <li><i class="fas fa-envelope"></i> info@damj.edu</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2023 DAMJ. جميع الحقوق محفوظة.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">سياسة الخصوصية</a>
+                    <a href="#">شروط الاستخدام</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Animation trigger on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0) translateX(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.addEventListener('DOMContentLoaded', () => {
+            const animatedElements = document.querySelectorAll('.animate-fadeInUp, .animate-fadeInLeft, .animate-fadeInRight');
+            animatedElements.forEach(el => observer.observe(el));
+
+            // FAQ toggle functionality
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const header = item.querySelector('.faq-header');
+                const content = item.querySelector('.faq-content');
+                const icon = item.querySelector('.faq-icon');
+
+                header.addEventListener('click', () => {
+                    const isActive = item.classList.contains('active');
+                    
+                    // Close all FAQ items
+                    faqItems.forEach(faq => {
+                        faq.classList.remove('active');
+                        faq.querySelector('.faq-icon').classList.replace('fa-minus', 'fa-plus');
+                    });
+
+                    // Toggle current item
+                    if (!isActive) {
+                        item.classList.add('active');
+                        icon.classList.replace('fa-plus', 'fa-minus');
+                    }
+                });
+            });
+
+            // Form submission
+            const contactForm = document.getElementById('contactForm');
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                // Add loading state to button
+                const submitBtn = contactForm.querySelector('.btn-submit');
+                const btnText = submitBtn.querySelector('.btn-text');
+                const btnIcon = submitBtn.querySelector('.btn-icon');
+                
+                btnText.textContent = 'جاري الإرسال...';
+                btnIcon.className = 'fas fa-spinner fa-spin btn-icon';
+                submitBtn.disabled = true;
+                
+                // Simulate form submission (replace with actual submission logic)
+                setTimeout(() => {
+                    btnText.textContent = 'تم الإرسال بنجاح!';
+                    btnIcon.className = 'fas fa-check btn-icon';
+                    
+                    setTimeout(() => {
+                        btnText.textContent = 'إرسال الرسالة';
+                        btnIcon.className = 'fas fa-paper-plane btn-icon';
+                        submitBtn.disabled = false;
+                        contactForm.reset();
+                    }, 2000);
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+</html>
